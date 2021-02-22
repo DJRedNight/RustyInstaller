@@ -74,6 +74,7 @@ goto exit
 
 	call modules/Oxide.cmd HandleOxide
 	call modules/RustEdit.cmd HandleRustEdit
+	call modules/Discord.cmd HandleDiscord
 
 	call modules/Directories.cmd RemoveTempDirectory
 	:: Start Server
