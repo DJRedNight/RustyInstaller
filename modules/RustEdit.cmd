@@ -2,7 +2,7 @@
 call:%~1
 goto exit
 
-:: Handle Steam Installation
+:: Handle Rust Edit Installation
 :HandleRustEdit
 	call :InstallRustEditDLL
 	goto:eof
