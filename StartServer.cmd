@@ -107,6 +107,7 @@ RustDedicated.exe -batchmode ^
 +rcon.password %rcon.password% ^
 +rcon.web %rcon.web%
 
+@echo off
 cls
 echo Server has stopped...
 pause
@@ -157,6 +158,7 @@ RustDedicated.exe -batchmode ^
 +rcon.password %rcon.password% ^
 +rcon.web %rcon.web%
 
+@echo off
 cls
 echo Server has stopped...
 pause
