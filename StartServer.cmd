@@ -88,6 +88,8 @@ for /F "usebackq delims=" %%L in ("proceduralConfig.json") do (
 
 cd %cd%\RustServer
 
+@echo on
+
 RustDedicated.exe -batchmode ^
 +server.port %server.port% ^
 +server.level "%server.level%" ^
@@ -98,7 +100,7 @@ RustDedicated.exe -batchmode ^
 +server.description "%server.description%" ^
 +server.url "%server.url%" ^
 +server.headerimage "%server.headerimage%" ^
-+server.identity "YourServer" ^
++server.identity "myserver" ^
 +server.gamemode "%server.gamemode%" ^
 +server.tags "%server.tags%" ^
 +rcon.port %rcon.port% ^
@@ -137,6 +139,8 @@ for /F "usebackq delims=" %%L in ("customMapConfig.json") do (
 
 cd %cd%\RustServer
 
+@echo on
+
 RustDedicated.exe -batchmode ^
 +server.port %server.port% ^
 +server.level "%server.level%" ^
@@ -146,7 +150,7 @@ RustDedicated.exe -batchmode ^
 +server.description "%server.description%" ^
 +server.url "%server.url%" ^
 +server.headerimage "%server.headerimage%" ^
-+server.identity "YourServer" ^
++server.identity "myserver" ^
 +server.gamemode "%server.gamemode%" ^
 +server.tags "%server.tags%" ^
 +rcon.port %rcon.port% ^
