@@ -1,0 +1,15 @@
+{
+	"server.port": "28015",
+	"server.level": "Procedural Map",
+	"levelurl": "F:\Gaming\RustServer\.serverscript\RustyServerInstall\CustomMaps\NoobIslandV3_5.map",
+	"server.maxplayers": "2",
+	"server.hostname": "Test Server (Procedural)",
+	"server.description": "Test Server (Procedural)",
+	"server.url": "http://google.com/",
+	"server.headerimage": "https://i.imgur.com/cng70HE.png",
+	"server.gamemode": "vanilla",
+	"server.tags": "monthly",
+	"rcon.port": "28016",
+	"rcon.password": "thisisaverystrongpassword",
+	"rcon.web": "1"
+}
