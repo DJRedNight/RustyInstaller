@@ -112,7 +112,7 @@ echo Server has stopped...
 pause
 exit
 
-:: Run A Procedural Rust Server
+:: Run A Custom Map Rust Server
 :RunCustomServer
 :: Read JSON file line by line:
 for /F "usebackq delims=" %%L in ("customMapConfig.json") do (
@@ -144,8 +144,8 @@ cd %cd%\RustServer
 RustDedicated.exe -batchmode ^
 +server.port %server.port% ^
 +server.level "%server.level%" ^
-+server.seed %server.seed% ^
 +levelurl "%levelurl%" ^
++server.maxplayers %server.maxplayers%  ^
 +server.hostname "%server.hostname%" ^
 +server.description "%server.description%" ^
 +server.url "%server.url%" ^
