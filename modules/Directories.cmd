@@ -47,7 +47,7 @@ goto exit
 	set BACKUPDIR=%cd%\%BACKUPDIR%
 
 	echo Backing up the blueprint file just in case...
-	move /y RustServer\server\YourServer\player.blueprints.*.* %BACKUPDIR%
+	move /y RustServer\server\myserver\player.blueprints.*.* %BACKUPDIR%
 	call modules/FlashMessage.cmd success "Moved blueprints file successfully!"
 
 	call modules/FlashMessage.cmd success "Blueprint Data Has Been Wiped Successfully!"
@@ -62,16 +62,16 @@ goto exit
 	set BACKUPDIR=%cd%\%BACKUPDIR%
 
 	echo Backing up the map files just in case...
-	for /f %%a in ('dir RustServer\server\YourServer /a:-D /b') do (
+	for /f %%a in ('dir RustServer\server\myserver /a:-D /b') do (
 		echo "%%~a"|findstr /i /L ".map">nul
 		if not errorlevel 1 (
 			echo Map File Found! Moving to backup directory...
-			move /y "RustServer\server\YourServer\%%~a" %BACKUPDIR%
+			move /y "RustServer\server\myserver\%%~a" %BACKUPDIR%
 		)
 		echo "%%~a"|findstr /i /L ".sav">nul
 		if not errorlevel 1 (
 			echo Map Save File Found! Moving to backup directory...
-			move /y "RustServer\server\YourServer\%%~a" %BACKUPDIR%
+			move /y "RustServer\server\myserver\%%~a" %BACKUPDIR%
 		)	
 	)
 
